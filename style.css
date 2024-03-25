@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/736x/dd/d8/de/ddd8deb5014f8e8c19bfe4e62cc9508d.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.title {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3rem;
+}
+
+h5 {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-shadow: 2px 2px 4px white;
+  border-radius: 3rem;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+  gap: 5px;
+}
+
+.search-container input {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border-color: white;
+  font-size: 14px;
+}
+
+.search-container button {
+  background: rgb(227, 210, 10);
+  background: radial-gradient(
+    circle,
+    rgba(227, 210, 10, 1) 0%,
+    rgba(227, 137, 10, 1) 13%,
+    rgba(227, 100, 10, 1) 69%,
+    rgba(227, 42, 10, 1) 96%
+  );
+  border-color: #e32a0a;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  float: left;
+  font-size: 14px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.card img {
+  border-radius: 5px;
+  margin-bottom: 8px;
+}

@@ -20,7 +20,6 @@ fetch(API)
 
       img.src = URL_img_png;
       img.alt = character.name;
-      // img.setAttribute("crossorigin", "anonymous");
       const name = document.createElement("h2");
       name.textContent = character.name;
       const nationality = document.createElement("p");
@@ -30,6 +29,8 @@ fetch(API)
       const weapons = document.createElement("p");
       weapons.textContent =
         "Weapons: " + character.personalInformation.weaponsOfChoice;
+      console.log(name);
+      console.log(weapons);
 
       card.appendChild(img);
       card.appendChild(name);
@@ -39,12 +40,20 @@ fetch(API)
 
       characterContainer.appendChild(card);
 
-      //console.log("id: ", character.id);
-      //console.log("name: ", character.name);
-      // console.log(character.image);
-      //console.log("nationality: ", character.bio.nationality);
-      //console.log("etnicity", character.bio.ethnicity);
-      //console.log("weapons: ", character.personalInformation.weaponsOfChoice);
+      //Funcion de filtrado
+      const inputEl = document.querySelector(".search-container input");
+      const buttonEl = document.querySelector(".search-container button");
+      const cardsEl = document.querySelectorAll(".card");
+
+      buttonEl.addEventListener("click", () => {
+        const inputText = inputEl.value.toLowerCase();
+
+        cardsEl.forEach((card) => {
+          const name = card.querySelector("h2").textContent.toLowerCase();
+          const display = name.includes(inputText) ? "inherit" : "none";
+          card.style.display = display;
+        });
+      });
     });
   })
   .catch((error) => {

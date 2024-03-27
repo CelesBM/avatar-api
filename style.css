@@ -28,6 +28,19 @@ body {
   border-radius: 3rem;
 }
 
+@media (min-width: 600px) {
+  .title {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .title {
+    width: 350px;
+    padding: 20px 40px;
+  }
+}
+
 h5 {
   font-size: 16px;
   text-align: center;
@@ -37,9 +50,33 @@ h5 {
   padding: 10px;
 }
 
+@media (min-width: 600px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1020px) {
+  h5 {
+    font-size: 22px;
+  }
+}
+
 .search-container {
   display: flex;
   gap: 5px;
+}
+
+@media (min-width: 600px) {
+  .search-container {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .search-container {
+    gap: 20px;
+  }
 }
 
 .search-container input {
@@ -49,7 +86,24 @@ h5 {
   font-size: 14px;
 }
 
+@media (min-width: 600px) {
+  .search-container input {
+    width: 300px;
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .search-container input {
+    width: 500px;
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+}
+
 .search-container button {
+  cursor: pointer;
   background: rgb(227, 210, 10);
   background: radial-gradient(
     circle,
@@ -64,6 +118,21 @@ h5 {
   font-size: 14px;
 }
 
+@media (min-width: 600px) {
+  .search-container button {
+    width: 120px;
+    padding: 5px 12px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .search-container button {
+    width: 160px;
+    font-size: 18px;
+  }
+}
+
 #root {
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +140,27 @@ h5 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (min-width: 600px) {
+  #root {
+    margin-top: 40px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1020px) {
+  #root {
+    margin-top: 60px;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 850px) {
+  #root {
+    margin-top: 60px;
+    gap: 50px;
+  }
 }
 
 .card {
@@ -84,8 +174,39 @@ h5 {
   border-radius: 5px;
   padding: 20px;
   width: 250px;
-  float: left;
+  height: 400px;
   font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: 260px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 750px) {
+  .card {
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 850px) {
+  .card {
+    width: 350px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .card {
+    padding: 20px 30px;
+    width: 400px;
+    height: 600px;
+    font-size: 20px;
+  }
 }
 
 .card h2 {
@@ -93,6 +214,19 @@ h5 {
   font-weight: bold;
   text-align: center;
 }
+
+@media (min-width: 600px) {
+  .card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .card h2 {
+    font-size: 26px;
+  }
+}
+
 .card img {
   border-radius: 5px;
   margin-bottom: 8px;
